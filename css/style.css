@@ -1,0 +1,11 @@
+/* tipografia e cor */
+@import "utility/tipografia.css";
+@import "utility/cores.css";
+
+/* configurações gerais */
+@import "global/global.css";
+@import "global/header.css";
+@import "global/footer.css";
+
+/* objetos dentro da página inicial */
+/* @import "home/{...}.css"; */
