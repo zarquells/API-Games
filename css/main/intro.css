@@ -1,3 +1,40 @@
 .intro p {
     max-width: 450px;
 }
+
+.intro{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro-title{
+    margin-bottom: 10px;
+}
+
+.intro-text{
+    margin-bottom: 30px;
+}
+
+.button-acessar{
+    background-color: #5c9209;
+    height: 40px;
+    width: 180px;
+    border-radius: 7.25px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    transition: transform 0.3s ease-out; 
+}
+
+button.button-acessar:hover{
+    background-color: #4e7c08;
+}
+button.button-acessar:active {
+    
+    transform: scale(0.93);
+}
