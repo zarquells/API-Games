@@ -3,15 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="img/Bichinho.svg">
     <title>API Games</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="teste">
-        <h1 class="font-title-1">Encontre informações sobre o jogo que desejar em nossa biblioteca</h1>
-        <p class="font-text-1">A <span>gamecoven!</span> é o lugar perfeito pra quem quer saber mais sobre jogos. Aqui, você encontra um catálogo completo com diversas informações sobre o seu jogo favorito!</p>
-    </div>
+    <main>
+        <div class="intro">
+            <div class="info">
+                <h1 class="font-title-1">Encontre informações sobre o jogo que desejar em nossa biblioteca</h1>
+                <p class="font-text-1">A <span>gamecoven!</span> é o lugar perfeito pra quem quer saber mais sobre jogos. Aqui, você encontra um catálogo completo com diversas informações sobre o seu jogo favorito!</p>
+                <button>
+                    <a><img src="img/setas/setabaixo.svg" width="15px" alt="seta apontando para baixo"></a>Acessar catálogo
+                </button>
+            </div>
+            <div class="imagem">
+                <img src="img/imagem-intro.svg" alt="imagem de controle vetor" width="470px">
+            </div>
+        </div>
+
+        <div class="catalogo">
+            <form id="pesquisa">
+                <input type="text" class="font-text-1" placeholder="Pesquisar jogo...">
+                <button id="pesquisa-btn">
+                    <img src="img/lupa.svg" width="20px" alt="icon vetor de lupa">
+                </button>
+            </form>
+
+            <div class="filtros">
+                <span class="tags filtrar">
+                    <img src="img/filtro.svg" width="25px" alt="icon vetor de filtro">
+                    <p class="font-title-2">Filtrar por:</p>
+                </span>
+                <span class="tags">
+                    <p class="font-title-2">Gêneros</p>
+                    <img src="img/setas/baixo.svg" width="25px" alt="icon vetor de seta">
+                </span>
+                <span class="tags">
+                    <p class="font-title-2">Plataformas</p>
+                    <img src="img/setas/baixo.svg" width="25px" alt="icon vetor de seta">
+                </span>
+                <span class="tags">
+                    <p class="font-title-2">Lançamento</p>
+                    <img src="img/setas/baixo.svg" width="25px" alt="icon vetor de seta">
+                </span>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 </html>

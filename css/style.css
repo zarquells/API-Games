@@ -8,4 +8,5 @@
 @import "global/footer.css";
 
 /* objetos dentro da página inicial */
-/* @import "home/{...}.css"; */
+@import "main/intro.css";
+@import "main/catalogo.css";

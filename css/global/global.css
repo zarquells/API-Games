@@ -3,7 +3,7 @@ body {
     width: 100%; 
     height: 100%; 
     margin: 0px;
-    padding: 0px;
+    padding: 50px;
     box-sizing: border-box;
     background-color: #ffffff;
 }
@@ -35,12 +35,4 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-}
-
-img[src$=".jpg"] {
-    border-radius: 4px;
-}
-
-.squad-name{
-    text-align: right;
 }
