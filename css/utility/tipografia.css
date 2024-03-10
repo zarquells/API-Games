@@ -1,1 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,600;1,600&family=Josefin+Sans:ital,wght@0,600;1,600&display=swap');
+
+.font-title-1 {
+    font-family: "Epilogue", sans-serif;
+    font-size: 28px;
+    max-width: 380px;
+}
+
+.font-title-2 {
+    font-family: "Epilogue", sans-serif;
+    font-size: 20px
+}
+
+.font-title-3 {
+    font-family: "Epilogue", sans-serif;
+    font-size: 30px
+}
+
+.font-text-1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    max-width: 450px;
+}
 
