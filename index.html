@@ -23,33 +23,62 @@
         </div>
 
         <div class="catalogo">
-            <form id="pesquisa">
-                <input type="text" class="font-text-1" placeholder="Pesquisar jogo...">
-                <button id="pesquisa-btn">
-                    <img src="img/lupa.svg" width="20px" alt="icon vetor de lupa">
-                </button>
-            </form>
-
+            <div class="pesquisa-cont">
+                <form id="pesquisa">
+                    <input type="text" class="font-text-1" placeholder="Pesquisar jogo...">
+                    <button id="pesquisa-btn">
+                        <img src="img/lupa.svg" width="20px" alt="icon vetor de lupa">
+                    </button>
+                </form>
+            </div>
+            
             <div class="filtros">
-                <span class="tags filtrar">
+                <span class="filtrar">
                     <img src="img/filtro.svg" width="25px" alt="icon vetor de filtro">
                     <p class="font-title-2">Filtrar por:</p>
                 </span>
-                <span class="tags">
+
+                <span class="aba">
                     <p class="font-title-2">Gêneros</p>
                     <img src="img/setas/baixo.svg" width="25px" alt="icon vetor de seta">
                 </span>
-                <span class="tags">
+                <div id="generos" class="tags">
+                    <p class="font-text-1 cor-3" id="acao">Ação</p>
+                    <p class="font-text-1 cor-3" id="rpg">RPG</p>
+                    <p class="font-text-1 cor-3" id="estrategia">Estratégia</p>
+                    <p class="font-text-1 cor-3" id="fps">FPS</p>
+                    <p class="font-text-1 cor-3" id="puzzle">Puzzle</p>
+                    <p class="font-text-1 cor-3" id="esportes">Esportes</p>
+                    <p class="font-text-1 cor-3" id="corrida">Corrida</p>
+                    <p class="font-text-1 cor-3" id="aventura">Aventura</p>
+                </div>
+
+                <span class="aba">
                     <p class="font-title-2">Plataformas</p>
                     <img src="img/setas/baixo.svg" width="25px" alt="icon vetor de seta">
                 </span>
-                <span class="tags">
-                    <p class="font-title-2">Lançamento</p>
+                <div id="plataformas" class="tags">
+                  <p class="font-text-1 cor-3" id="computer">PC</p>  
+                  <p class="font-text-1 cor-3" id="playstation">PlayStation 4</p>  
+                  <p class="font-text-1 cor-3" id="xbox">Xbox One</p>
+                  <p class="font-text-1 cor-3" id="nintendo">Nintendo Switch</p>
+                  <p class="font-text-1 cor-3" id="ios">iOS</p>
+                  <p class="font-text-1 cor-3" id="android">Android</p>
+                </div>
+
+
+                <span class="aba">
+                    <p class="font-title-2">Modo</p>
                     <img src="img/setas/baixo.svg" width="25px" alt="icon vetor de seta">
                 </span>
+                <div id="modos" class="tags">
+                    <p class="font-text-1 cor-3" id="singleplayer">Singleplayer</p>
+                    <p class="font-text-1 cor-3" id="multiplayer">Multiplayer</p>
+                </div>
             </div>
         </div>
     </main>
     <script src="js/script.js"></script>
+    <script src="js/animacoes.js"></script>
 </body>
 </html>
