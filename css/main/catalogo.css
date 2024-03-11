@@ -9,26 +9,29 @@
     margin-bottom: 25px;
 }
 
-#pesquisa-btn {
+#pesquisa-btn, input, button {
     background-color: transparent;
     border: none;
     outline: none;
+    padding: 0px;
+    margin: 0px;
 }
 
-input {
-    border: none;
-    outline: none;
+.pesquisa-cont {
+    display: flex;
+    justify-content: center;
 }
 
 .filtros span {
     display: flex;
     align-items: center;
-}
-
-.tags img {
-    padding: 0px;
+    margin: 12px 0px;
 }
 
 .filtrar img, p {
     padding-right: 5px;
+}
+
+.tags p {
+   padding-bottom: 20px;
 }
