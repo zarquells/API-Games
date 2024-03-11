@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', async() => {
 
     //fazendo a requisição de API após carregar a página
     try{
-        //requisições assíncronas garantindo ''suavidade'' aos solicitar a API
-        // const resposta = await fetch('https://api.rawg.io/api/games?key=ff05728585944d398909cc8c684f6ed2&page_size=9&page=1')
+        //requisições assíncronas garantindo 'suavidade'' aos solicitar a API
+        const resposta = await fetch('https://api.rawg.io/api/games?key=ff05728585944d398909cc8c684f6ed2&page_size=12&page=1')
 
         if (!resposta.ok) {
             throw new Error(`Erro de requisição: ${resposta.status} - ${resposta.statusText}`)
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async() => {
             return `
             <div class="jogo-unico">
                 <img class="imagemJogo" src='   ${jogo.imagem}'>
-                <h1  class="font-title-2"     > ${jogo.nome}</h1>
+                <p  class="font-title-2"     > ${jogo.nome}</p>
                 <p   class="font-text-1 cor-6">(${jogo.lancamento})</p>
                 <p   class="font-text-1 cor-3"> ${jogo.genero}</p>
             </div>
