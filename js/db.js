@@ -1,6 +1,3 @@
-const apiKey = 'ff05728585944d398909cc8c684f6ed2'
-const baseURL = 'https://api.rawg.io/api'
-
 document.addEventListener('DOMContentLoaded', async() => {
     let exibirJogos = document.querySelector('#jogos-lista')
 

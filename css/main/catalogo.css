@@ -75,3 +75,17 @@
     border-radius: 12px;
     margin-bottom: 10px;
 }
+
+.tom-verde {
+    transition: color 0.8s;
+    color: #5c9209;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.tom-verde:hover {
+    text-decoration: underline;
+    transform: translateX(4px);
+}
