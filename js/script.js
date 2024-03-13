@@ -39,10 +39,12 @@ async function catalogo_padrao(){
 }
 
 
+
 async function searchGames() {
     const searchTerm = pesquisar.value // Corrigido para obter o valor do campo de pesquisa
     
-    jogosLista.style.display = "none"
+    jogosLista.style.display = "none";
+    buscaLista.style.display = "flex";
     //fazendo a requisição de API de forma assíncrona
     try {
         const resposta = await fetch(`https://api.rawg.io/api/games?key=ff05728585944d398909cc8c684f6ed2&search=${searchTerm}`)
@@ -74,7 +76,7 @@ async function searchGames() {
         })
         
         buscaLista.innerHTML = exibirJogosNovos.join('')
-        limpar.classList.add('tom-verde');
+        buttonlimpar.classList.add('tom-verde');
         
     } catch(error) {
         console.error(error)
@@ -108,6 +110,8 @@ buttonsearch.addEventListener('click', function(event) {
 
 buttonlimpar.addEventListener('click', function(event) {
     pesquisar.value = "";
+    jogosLista.style.display = "flex";
+    buscaLista.style.display = "none";
     catalogo_padrao();
 });
 
