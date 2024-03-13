@@ -46,7 +46,7 @@ async function searchGames() {
     buscaLista.style.display = "flex";
     //fazendo a requisição de API de forma assíncrona
     try {
-        const resposta = await fetch(`https://api.rawg.io/api/games?key=ff05728585944d398909cc8c684f6ed2&search=${searchTerm}&ordering=suggestions_count`)
+        const resposta = await fetch(`https://api.rawg.io/api/games?key=ff05728585944d398909cc8c684f6ed2&ordering=ratings_count&search=${searchTerm}`)
         
         if (!resposta.ok) {
             throw new Error(`Erro de requisição: ${resposta.status} - ${resposta.statusText}`)
