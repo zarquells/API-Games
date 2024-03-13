@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', catalogo_padrao())
 async function catalogo_padrao(){
     try{
         //requisições assíncronas garantindo 'suavidade'' aos solicitar a API
-        const resposta = await fetch('https://api.rawg.io/api/games?key=ff05728585944d398909cc8c684f6ed2&ordering=suggestions_count&page_size=12&page=1')
+        const resposta = await fetch('https://api.rawg.io/api/games?key=ff05728585944d398909cc8c684f6ed2&ordering=suggestions_count&page_size=12&page=1`)
 
         if (!resposta.ok) {
             throw new Error(`Erro de requisição: ${resposta.status} - ${resposta.statusText}`)
