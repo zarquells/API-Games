@@ -56,7 +56,7 @@ async function searchGames() {
 
     //fazendo a requisição de API de forma assíncrona
     try {
-        const resposta = await fetch(`https://api.rawg.io/api/games?key=ff05728585944d398909cc8c684f6ed2&ordering=ratings_count&search=${searchTerm}`)
+        const resposta = await fetch(`https://api.rawg.io/api/games?key=ff05728585944d398909cc8c684f6ed2&search=${searchTerm}`)
         //desta vez colocamos o requisito de pesquisa = &search + termo inserido pelo usuário
         
         if (!resposta.ok) {
