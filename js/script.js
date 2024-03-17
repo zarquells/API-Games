@@ -132,9 +132,4 @@ buttonlimpar.addEventListener('click', function(event) {
     pesquisar.value = "";
     jogosLista.style.display = "flex";
     buscaLista.style.display = "none";
-    // catalogo_padrao();
 });
-
-// function scroll(){
-
-// }
